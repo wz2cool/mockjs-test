@@ -1,4 +1,5 @@
 (function () {
     'use strict';
-    angular.module('mockjs_app', []);
+    var app = angular.module('mockjs_app', []);
+    Mock.mockjax(app);
 })();
