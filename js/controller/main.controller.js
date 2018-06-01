@@ -7,7 +7,17 @@
         $scope.data = 'loading...';
 
 
-        httpService.getUsers()
+        /*  httpService.getUsers()
+              .then(function (value) {
+                  console.log(JSON.stringify(value.data));
+                  $scope.data = value.data;
+
+              }, function (reason) {
+                  console.error(reason);
+              })*/
+
+
+        httpService.getStudent(2)
             .then(function (value) {
                 console.log(JSON.stringify(value.data));
                 $scope.data = value.data;
